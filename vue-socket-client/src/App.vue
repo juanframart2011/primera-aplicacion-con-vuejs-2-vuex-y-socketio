@@ -3,9 +3,8 @@
     <header>
       <ul class="nav">
         <li class="nav-item">VUEJS 2 + VUEX + SOCKETIO</li>
-        <li class="nav-item">
-          <router-link to="/counter">Contador</router-link>
-        </li>
+        <li class="nav-item"><router-link to="/counter">Contador</router-link></li>
+        <li class="nav-item"><router-link to="/chat">Chat</router-link></li>
       </ul>
     </header>
 
@@ -30,30 +29,39 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body {
+    margin: 0;
+  }
 
-h1, h2 {
-  font-weight: normal;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  main {
+    text-align: center;
+    margin-top: 40px;
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  header {
+    height: 56px;
+    padding: 0 16px 0 24px;
+    background-color: #35495E;
+    color: #ffffff;
+  }
 
-a {
-  color: #42b983;
-}
+  header li {
+    list-style: none;
+    margin-top: 15px;
+    float: left;
+    margin-right: 25px;
+  }
+  header a {
+    color: white;
+  }
+  header a:hover{
+    color: #fff !important;
+  }
 </style>
